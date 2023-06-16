@@ -145,12 +145,19 @@ img {
 }
 /* Hero section */
 .hero {
+    display: block;
+    margin: auto;
+
     padding-top: 188px;
     padding-bottom: 188px;
+
+    max-width: 1440px;
     
-    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/index/banner.jpg);
+    background-image: linear-gradient( rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)) ,url(../images/index/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+       
 
     background-color: var(--navy-blue-color); 
 }
@@ -212,6 +219,7 @@ img {
     margin-bottom: 8px;
 
     background-color: var(--cloud-color);
+    border-radius: 4px;
 }
 .features .card:last-child {
     margin-right: 0;
@@ -310,10 +318,16 @@ img {
 }
 .social-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+.social-margin {
+    margin-right: 24px;
+}
+.social-margin:last-child {
+    margin-right: 0;
 }
 .team-iconbgr {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -336,8 +350,14 @@ img {
     display: flex;
     justify-content: space-between;
 }
+.customers-margin {
+    margin-right: 24px;
+}
+.customers-margin:last-child {
+    margin-right: 0;
+}
 .customers-border {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 
@@ -345,13 +365,10 @@ img {
     width: 168px;
     height: 88px;
 
-    margin-right: 24px;
+    
     border: 1px solid var(--light-slate-color);
     border-radius: 4px;
     color: var(--light-slate-color);
-}
-.customers-border:last-child {
-    margin-right: 0;
 }
 .customers-icon {
     fill: currentColor;
